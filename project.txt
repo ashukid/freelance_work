@@ -1,0 +1,9 @@
+The weekly sales transaction dataset shows weekly sales of over 800 items across a year. Your task is to use a temporal convolutional neural network to predict the final week's sales from the previous values for each item in the dataset. Report your mean squared error which is defined as the mean squared error of your predictions 1/n(sum_i (y'i - yi)**2). The best mean squared that we achieve in this dataset is about 17.5 with ridge regression applied to an LSTM encoding of the data.
+
+You should achieve an MSE below 20.
+
+Use the temporal convolutional network in Keras given here https://github.com/philipperemy/keras-tcn.
+
+Submit your program that takes as input the dataset Sales_Transactions_Dataset_Weekly.csv and outputs the predictions of week 51 for each item and the mean squared error.
+
+It's very important that your code does not consider the last column during training. If it does I will not consider the project as finished. If the code is too complicated to decipher and I cannot tell if you consider the last column we have no choice but to consider this project incomplete. To avoid such problems make it clear in your code (with comments) that you are considering the data only up to week 51 in the training and that week 52 is clearly specified as test.
